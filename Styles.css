@@ -1,1 +1,39 @@
+/* Default Light Theme */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f0f0f0;
+}
+
+.mode-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode header {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .mode-button {
+  background-color: #ffffff;
+  color: #000000;
+}
